@@ -1,33 +1,35 @@
-# أساسيات تشغيل Odoo
-babel
-pytz
-passlib
-python-dateutil
-requests
-Werkzeug
-lxml[html_clean]
-markupsafe
-psycopg2-binary
-wheel
-
-# PDF والصور وQR
-Pillow
-qrcode
-reportlab
-PyPDF2
-
-# Excel والتقارير
-openpyxl
-xlrd
-XlsxWriter
-
-# الترجمة وتحويل الأرقام لكلمات
-polib
-num2words
-
-# التعامل مع USB و XML / SOAP
-pyusb
-zeep
-
-# مراقبة النظام
-psutil
+Babel==2.12.1
+chardet==5.1.0
+decorator==5.1.1
+docutils==0.20.1
+ebaysdk==2.2.0
+freezegun==1.2.2
+gevent==21.12.0
+greenlet==1.1.2
+idna==3.4
+Jinja2==3.1.2
+lxml==4.9.3
+MarkupSafe==2.1.3
+passlib==1.7.4
+Pillow==9.5.0
+polib==1.2.0
+psutil==5.9.5
+psycopg2-binary==2.9.7
+pydot==1.4.2
+pyparsing==3.0.9
+PyPDF2==2.10.5
+python-dateutil==2.8.2
+pytz==2023.3
+PyYAML==6.0.1
+qrcode==7.4.2
+reportlab==3.6.13
+requests==2.31.0
+setuptools==67.7.2
+six==1.16.0
+urllib3==1.26.16
+Werkzeug==2.2.3
+wheel==0.40.0
+xlrd==2.0.1
+xlsxwriter==3.1.2
+xlwt==1.3.0
+zeep==4.1.0 
