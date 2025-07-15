@@ -1,10 +1,36 @@
-wheel
-psycopg2-binary
+# أساسية لتشغيل Odoo
 babel
-passlib
 pytz
-werkzeug
-lxml[html_clean]
-markupsafe
+passlib
 python-dateutil
 requests
+Werkzeug
+lxml[html_clean]
+markupsafe
+psycopg2-binary
+wheel
+
+# دعم PDF وتوليد صور وباركود
+Pillow
+qrcode
+reportlab
+
+# دعم Excel
+openpyxl
+xlrd
+XlsxWriter
+
+# دعم الترجمة
+polib
+
+# دعم الأرقام بالحروف (مطلوب في الفواتير)
+num2words
+
+# دعم QR والتحقق من الهوية
+pyusb
+
+# دعم التعامل مع ملفات XML و SOAP (للأنظمة الحكومية أو الخارجية)
+zeep
+
+# نظام وإحصائيات
+psutil
