@@ -47,4 +47,5 @@ RUN chmod +x odoo-bin
 USER odoouser
 
 # تشغيل أودو
-CMD ["python", "odoo-bin", "-c", "odoo.conf"]
+CMD ["python", "odoo-bin", "-c", "odoo.conf", "-i", "base", "--db_host=postgres.railway.internal"]
+
