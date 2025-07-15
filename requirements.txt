@@ -4,7 +4,7 @@ babel
 passlib
 pytz
 werkzeug
-lxml
+lxml[html_clean]
 markupsafe
 python-dateutil
 requests
