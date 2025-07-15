@@ -13,6 +13,13 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     libffi-dev \
     libssl-dev \
+    zlib1g-dev \
+    libjpeg8-dev \
+    liblcms2-dev \
+    libblas-dev \
+    libatlas-base-dev \
+    build-essential \
+    python3-dev \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
@@ -26,8 +33,12 @@ COPY . /app
 WORKDIR /app
 
 # تثبيت الاعتمادات
-RUN pip install --upgrade pip
+COPY requirements.txt .
+RUN pip install --upgrade pip setuptools wheel
 RUN pip install -r requirements.txt
+
+# إعطاء صلاحيات تنفيذ للملف odoo-bin إن لم يكن قابل للتنفيذ
+RUN chmod +x odoo-bin
 
 # تشغيل أودو
 CMD ["python", "odoo-bin", "-c", "odoo.conf"]
