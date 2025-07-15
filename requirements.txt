@@ -1,4 +1,4 @@
-# أساسية لتشغيل Odoo
+# أساسيات تشغيل Odoo
 babel
 pytz
 passlib
@@ -10,27 +10,24 @@ markupsafe
 psycopg2-binary
 wheel
 
-# دعم PDF وتوليد صور وباركود
+# PDF والصور وQR
 Pillow
 qrcode
 reportlab
+PyPDF2
 
-# دعم Excel
+# Excel والتقارير
 openpyxl
 xlrd
 XlsxWriter
 
-# دعم الترجمة
+# الترجمة وتحويل الأرقام لكلمات
 polib
-
-# دعم الأرقام بالحروف (مطلوب في الفواتير)
 num2words
 
-# دعم QR والتحقق من الهوية
+# التعامل مع USB و XML / SOAP
 pyusb
-
-# دعم التعامل مع ملفات XML و SOAP (للأنظمة الحكومية أو الخارجية)
 zeep
 
-# نظام وإحصائيات
+# مراقبة النظام
 psutil
